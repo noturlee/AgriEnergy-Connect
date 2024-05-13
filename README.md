@@ -21,20 +21,6 @@ Agri-Energy Connect is a forward-thinking initiative bridging agriculture and gr
 13. [Contributing](#contributing)
 
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Functionality Requirements](#functionality-requirements)
-3. [Setup Instructions](#setup-instructions)
-4. [Installation and Setup](#installation-and-setup)
-5. [Building and Running the Prototype](#building-and-running-the-prototype)
-6. [System Functionalities and User Roles](#system-functionalities-and-user-roles)
-7. [Roadmap](#roadmap)
-8. [Images](#images)
-9. [Demo Video](#demo-video)
-10. [Get Started](#get-started)
-11. [Contributing](#contributing)
-
 ## Introduction
 
 In response to the growing need for sustainable agricultural practices and the integration of green energy solutions in South Africa, the visionary initiative named "Agri-Energy Connect" has been conceptualized. This initiative aims to develop an innovative web platform that connects the agricultural sector with green energy technology providers. Key features of the platform include a Green Energy Marketplace and a platform for farmers to sell their products.
