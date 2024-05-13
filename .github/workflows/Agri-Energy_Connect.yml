@@ -33,7 +33,7 @@ jobs:
       run: dotnet test FireBasics/FireBasics.sln
 
     - name: Publish the project
-      run: dotnet publish -c Release -o ${{ github.workspace }}/publish
+      run: dotnet publish FireBasics/FireBasics.sln -c Release -o ${{ github.workspace }}/publish
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
