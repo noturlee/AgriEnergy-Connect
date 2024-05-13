@@ -1,3 +1,5 @@
+<img src ="Images/Banner.gif" />
+
 # Agri-Energy Connect
 
 Agri-Energy Connect is a forward-thinking initiative bridging agriculture and green energy in South Africa. As an MVC platform, it fosters sustainable practices and integrates renewable energy solutions. It serves as a vital link between farmers and technology providers, driving innovation for a greener future.
@@ -19,23 +21,11 @@ Agri-Energy Connect is a forward-thinking initiative bridging agriculture and gr
 13. [Contributing](#contributing)
 
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Functionality Requirements](#functionality-requirements)
-3. [Setup Instructions](#setup-instructions)
-4. [Installation and Setup](#installation-and-setup)
-5. [Building and Running the Prototype](#building-and-running-the-prototype)
-6. [System Functionalities and User Roles](#system-functionalities-and-user-roles)
-7. [Roadmap](#roadmap)
-8. [Images](#images)
-9. [Demo Video](#demo-video)
-10. [Get Started](#get-started)
-11. [Contributing](#contributing)
-
 ## Introduction
 
 In response to the growing need for sustainable agricultural practices and the integration of green energy solutions in South Africa, the visionary initiative named "Agri-Energy Connect" has been conceptualized. This initiative aims to develop an innovative web platform that connects the agricultural sector with green energy technology providers. Key features of the platform include a Green Energy Marketplace and a platform for farmers to sell their products.
+
+<img src ="https://media.baamboozle.com/uploads/images/604865/1676058321_96119_gif-url.gif"/>
 
 ### Green Energy Marketplace
 
@@ -79,6 +69,8 @@ Follow these step-by-step instructions to set up the development environment:
 3. **Dependencies:**
    - Open the project in Visual Studio.
    - Ensure you have the necessary dependencies installed, including .NET Framework and Microsoft.EntityFrameworkCore packages.
+  
+   <img src ="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9d2b73-a2e7-4148-b638-2b258ffe7644/dfulzfg-1f018aa1-8021-4fc7-9032-710dd7953e43.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FhOWQyYjczLWEyZTctNDE0OC1iNjM4LTJiMjU4ZmZlNzY0NFwvZGZ1bHpmZy0xZjAxOGFhMS04MDIxLTRmYzctOTAzMi03MTBkZDc5NTNlNDMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.F5bQbkIMPvev0TT1n39I-kwM3HrmJH75Z_dXT2rS0hs"/>
 
 ## Installation and Setup
 
@@ -129,7 +121,7 @@ Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks 
 
 ## Images
 
-![Screenshot](/path/to/screenshot.png)
+![gif](https://cdn.pixabay.com/animation/2023/06/29/06/23/06-23-06-393_512.gif)
 
 ## Demo Video
 
@@ -174,7 +166,7 @@ Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks 
   </tr>
 </table>
 
-<img src ="https://d23.com/app/uploads/2023/10/MM_V4_250x250.gif" />
+<img src ="https://cdn.pixabay.com/animation/2023/08/21/15/08/15-08-12-734_512.gif" />
 
 <h2 align="left">🟢 Coding Activity</h2>
 
@@ -216,6 +208,7 @@ We welcome contributions from the community! If you'd like to contribute to Miss
 4. Push your changes to your forked repository.
 5. Open a pull request, and we'll review your changes.
 
+<img src ="https://media.tenor.com/u4RZrIbwcwEAAAAj/pokemon-miltank.gif"/>
 
 
 
