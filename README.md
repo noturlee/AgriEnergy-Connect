@@ -1,3 +1,5 @@
+<img src ="Images/Banner.gif" />
+
 # Agri-Energy Connect
 
 Agri-Energy Connect is a forward-thinking initiative bridging agriculture and green energy in South Africa. As an MVC platform, it fosters sustainable practices and integrates renewable energy solutions. It serves as a vital link between farmers and technology providers, driving innovation for a greener future.
@@ -174,7 +176,7 @@ Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks 
   </tr>
 </table>
 
-<img src ="https://d23.com/app/uploads/2023/10/MM_V4_250x250.gif" />
+<img src ="https://cdn.pixabay.com/animation/2023/08/21/15/08/15-08-12-734_512.gif" />
 
 <h2 align="left">🟢 Coding Activity</h2>
 
