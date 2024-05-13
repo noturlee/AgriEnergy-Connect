@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <br />
+    <br />
+    <br />
+
+    <h1><strong>AGRI-ENERGY CONNECT</strong></h1>
+    <h4>Creating a Sustainable future</h4>
+
+    <!-- Stars and Award text -->
+    <div style="margin-top: 20px;">
+        <span style="color: gold;">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </span>
+        <span style="margin-left: 10px; color: white;"><strong>AWARDED BEST E-MARKET</strong></span>
+    </div>
+</div>
+
+@if (ViewBag.IsLoggedIn)
+{
+    <form asp-action="LogOut" asp-controller="Auth" method="post">
+        <button type="submit" class="btn btn-danger">Log Out</button>
+    </form>
+}
+
+<style>
+    h1 {
+        color: #C1FF72;
+        font-size: 80px;
+        font-weight: bold;
+    }
+
+    h4 {
+        color: cyan;
+        font-weight: bold;
+    }
+
+    body {
+        background-image: url('css/LandingPage.jpg');
+        background-position: 300px top; /* Adjust the value to start 300px away from the left */
+        background-repeat: no-repeat; /* Ensure the background image doesn't repeat */
+        background-size: 1650px 950px; /* Set a specific size for the background image */
+        background-attachment: fixed; /* This keeps the image fixed while scrolling */
+    }
+</style>

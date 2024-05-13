@@ -1,0 +1,79 @@
+﻿@model IEnumerable<FireBasics.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    /* Custom CSS for smaller cards */
+    .card {
+        width: 300px; /* Adjust the width as needed */
+        max-height: 700px; /* Adjust the max-height as needed */
+        background-color: rgba(255, 255, 255, 0.5); /* Background color with opacity */
+        backdrop-filter: blur(10px); /* Apply a blur effect */
+        color:black;
+    }
+
+    .card-body {
+        max-height: 400px; /* Adjust the max-height of the card body as needed */
+        overflow-y: auto; /* Add scrollbar if content exceeds max-height */
+        color: black;
+    }
+
+
+    .card-img-top {
+        max-height: 150px; /* Adjust the max-height of the image as needed */
+        object-fit: cover; /* Ensure the image covers the container */
+    }
+
+    body {
+        background-image: url('https://www.cayugamutual.com/wp-content/uploads/2021/05/AdobeStock_292531791-scaled.jpeg');
+        background-position: 300px top; /* Adjust the value to start 300px away from the left */
+        background-repeat: no-repeat; /* Ensure the background image doesn't repeat */
+        background-size: 1650px 950px; /* Set a specific size for the background image */
+        background-attachment: fixed; /* This keeps the image fixed while scrolling */
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
+    }
+
+    h1 {
+        color: white;
+    }
+</style>
+<br />
+<br />
+
+<h1>Green Market Place</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+@foreach (var item in Model)
+{
+    <div class="card mb-3">
+        <h3 class="card-header">@Html.DisplayFor(modelItem => item.ProductName)</h3>
+        <div class="card-body">
+
+            <!-- Displaying the image -->
+            <img src="@item.Image_Url" class="card-img-top" alt="Product Image">
+        </div>
+        <div class="card-body">
+            <p class="card-text">Price: @Html.DisplayFor(modelItem => item.Price)</p>
+            <p class="card-text">Quantity: @Html.DisplayFor(modelItem => item.Quantity)</p>
+            <p class="card-text">Availability: @Html.DisplayFor(modelItem => item.Availability)</p>
+            <p class="card-text">Production Date: @Html.DisplayFor(modelItem => item.ProductionDate)</p>
+            <p class="card-text">Category: @Html.DisplayFor(modelItem => item.Category.CategoryName)</p>
+            <p class="card-text">Farmer: <a asp-action="FarmerDetails" asp-route-id="@item.FarmerId">@item.Farmer.Name</a></p>
+        </div>
+        <div class="card-body">
+            <a href="#" class="card-link">Edit</a>
+            <a href="#" class="card-link">Details</a>
+            <a href="#" class="card-link">Delete</a>
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+}
+</html>
