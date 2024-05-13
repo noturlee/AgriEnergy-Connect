@@ -30,7 +30,7 @@ jobs:
       run: dotnet build FireBasics/FireBasics.sln --configuration Release
 
     - name: Test the project
-      run: dotnet test
+      run: dotnet test FireBasics/FireBasics.sln
 
     - name: Publish the project
       run: dotnet publish -c Release -o ${{ github.workspace }}/publish
