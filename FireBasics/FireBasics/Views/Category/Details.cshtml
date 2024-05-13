@@ -1,0 +1,38 @@
+﻿@model IEnumerable<FireBasics.Models.Product>
+
+@{
+    ViewData["Title"] = "Products in Category";
+}
+
+<h1>Products in Category</h1>
+
+<div class="product-container">
+    @foreach (var product in Model)
+    {
+        <div class="product-card">
+            <h3>@product.ProductName</h3>
+            <p>Description: @product.ProductDescription</p>
+            <p>Price: @product.Price</p>
+            <p>Price: @product.Quantity</p>
+            <p>Price: @product.Image_Url</p>
+            <p>Price: @product.Availability</p>
+        </div>
+    }
+</div>
+
+<style>
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        width: 300px;
+        transition: all 0.3s ease;
+        background-color: #f9f9f9;
+    }
+</style>
