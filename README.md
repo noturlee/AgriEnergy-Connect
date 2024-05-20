@@ -72,7 +72,7 @@ Follow these step-by-step instructions to set up the development environment:
   
    <img src ="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9d2b73-a2e7-4148-b638-2b258ffe7644/dfulzfg-1f018aa1-8021-4fc7-9032-710dd7953e43.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FhOWQyYjczLWEyZTctNDE0OC1iNjM4LTJiMjU4ZmZlNzY0NFwvZGZ1bHpmZy0xZjAxOGFhMS04MDIxLTRmYzctOTAzMi03MTBkZDc5NTNlNDMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.F5bQbkIMPvev0TT1n39I-kwM3HrmJH75Z_dXT2rS0hs"/>
 
-## Installation and Setup
+## 🟠 Installation and Setup
 
 Once you have cloned the repository and ensured all dependencies are installed, follow these steps to install and set up the application:
 
@@ -98,7 +98,7 @@ To build and run the prototype, follow these steps:
 - Add new farmer profiles with essential details.
 - View and filter a comprehensive list of products from any farmer based on criteria such as date range and product type.
 
-## 🟠 Roadmap
+## 🟢 Roadmap
 
 Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks and planned features.
 
