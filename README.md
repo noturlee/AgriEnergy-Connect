@@ -21,7 +21,7 @@ Agri-Energy Connect is a forward-thinking initiative bridging agriculture and gr
 13. [Contributing](#contributing)
 
 
-## Introduction
+## 🟢 Introduction
 
 In response to the growing need for sustainable agricultural practices and the integration of green energy solutions in South Africa, the visionary initiative named "Agri-Energy Connect" has been conceptualized. This initiative aims to develop an innovative web platform that connects the agricultural sector with green energy technology providers. Key features of the platform include a Green Energy Marketplace and a platform for farmers to sell their products.
 
@@ -35,7 +35,7 @@ In response to the growing need for sustainable agricultural practices and the i
 
 - A platform where farmers can sell their products.
 
-## Functionality Requirements
+## 🟠 Functionality Requirements
 
 1. **Database Development and Integration:**
    - Design and integrate a relational database to manage information about farmers and their products.
@@ -54,7 +54,7 @@ In response to the growing need for sustainable agricultural practices and the i
      - Functionality to add new farmer profiles with essential details.
      - Capability to view and filter a comprehensive list of products from any farmer based on criteria such as date range and product type.
 
-## Setup Instructions
+## 🟢 Setup Instructions
 
 Follow these step-by-step instructions to set up the development environment:
 
@@ -98,7 +98,7 @@ To build and run the prototype, follow these steps:
 - Add new farmer profiles with essential details.
 - View and filter a comprehensive list of products from any farmer based on criteria such as date range and product type.
 
-## 🔵 Roadmap
+## 🟠 Roadmap
 
 Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks and planned features.
 
@@ -119,7 +119,7 @@ Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks 
 
 
 
-## Images
+## 🟢 Images
 
 ![gif](https://cdn.pixabay.com/animation/2023/06/29/06/23/06-23-06-393_512.gif)
 
@@ -200,7 +200,7 @@ Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks 
 
 To get started with Agri-Energy Connect, follow the [Installation and Setup](#installation-and-setup) and [Building and Running the Prototype](#building-and-running-the-prototype) instructions.
 
-## 🔵 Contributing
+## 🟠 Contributing
 We welcome contributions from the community! If you'd like to contribute to Miss Minutes, please follow these steps:
 1. Fork the repository.
 2. Create a new branch for your changes.
