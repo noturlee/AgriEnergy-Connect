@@ -1,0 +1,242 @@
+﻿@{
+    ViewData["Title"] = "Who we are";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+
+        .content {
+            margin-left: 380px; /* Adjust the margin-left value to create the desired space */
+        }
+
+        .btn-primary {
+            background-color: #00a86b; /* Adjust the color as needed */
+            border-color: #00a86b; /* Adjust the color as needed */
+            color: #fff; /* Adjust the color as needed */
+        }
+
+        h1 {
+            font-size: 70px;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        h2 {
+            font-size: 50px;
+            text-align: center;
+            color: darkorange;
+        }
+
+        .carousel-container {
+            width: 100%; /* Adjust the width of the carousel container */
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-slide-wrapper {
+            display: flex;
+            transition: transform 0.2s ease;
+        }
+
+        .carousel-slide {
+            flex: 0 0 calc(20% - 20px); /* Adjust based on the desired width */
+            margin-right: 20px;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            outline: none;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .split-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .section {
+            width: 30%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+            .section h3 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .section p {
+                font-size: 16px;
+            }
+    </style>
+</head>
+
+<body>
+
+    <h1>@ViewData["Title"]</h1>
+    <br />
+    <h2>FARMERS | INNOVATORS | CULTIVATORS</h2>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="carousel-container">
+        <div class="carousel-slide-wrapper">
+            <!-- Images -->
+            <div class="carousel-slide">
+                <img src="https://th.bing.com/th/id/OIP.8y1w_gkH6TROp8k-87HVnAHaE7?w=268&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://th.bing.com/th/id/OIP.-UQ3EI04d33yPqRdK_V5gQHaE8?w=268&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://th.bing.com/th/id/OIP.i57P4AsOJaZGgAxdrQwrLQHaEo?w=285&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 3">
+            </div>
+            <!--More Images-->
+            <div class="carousel-slide">
+                <img src="https://th.bing.com/th/id/OIP.xkPhHm6nMZtXy5v3NVjt5gHaE7?w=274&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 4">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://th.bing.com/th/id/OIP.ojYNjsH5S4NyjaEUXPuJDwHaE8?w=274&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 5">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://th.bing.com/th/id/OIP.zgdlWhYrrbPl3QPcUHCbwAHaE6?w=276&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 6">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://th.bing.com/th/id/OIP.FvLB6OJNLldlwmuOCAj-NQHaE7?w=223&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 7">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://th.bing.com/th/id/OIP.v4-9Z9QF-wSPqCQyvAOqDQHaE7?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image 8">
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="split-section">
+        <div class="section">
+            <h3>Who we are</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+        <div class="section">
+            <h3>What we doing</h3>
+            <p>Curabitur rutrum porttitor sapien, id egestas nunc. Nullam tristique turpis vitae ex malesuada.</p>
+        </div>
+        <div class="section">
+            <h3>Where we heading</h3>
+            <p>Fusce facilisis nisi vel mi suscipit, at convallis felis facilisis. Nam in elit a dolor vehicula.</p>
+        </div>
+    </div>
+
+    <br>
+    <br />
+    <br />
+    <h>Frequently asked Questions</h>
+    <br />
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    About Bargain Books
+                </button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Bargain Books is a leading retailer of affordable and high-quality books. Established in the year 2000, our mission is to make the world of books accessible to all readers. With a diverse collection of genres, cozy stores, and a passionate team, Bargain Books is your go-to destination for all your reading needs.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    FAQ: How can I place an order?
+                </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Placing an order at Bargain Books is easy. You can visit our website to browse our collection and add items to your cart. Once you're ready, proceed to checkout and follow the prompts to complete your order. Alternatively, you can visit one of our stores and our friendly staff will assist you in making your purchase.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    FAQ: What payment methods do you accept?
+                </button>
+            </h3>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    We accept various payment methods to ensure a convenient shopping experience for our customers. You can pay for your order using credit or debit cards, PayPal, or cash on delivery (available in select areas). Rest assured, your payment details are safe and secure with us.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    const wrapper = document.querySelector('.carousel-slide-wrapper');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const slideWidth = slides[0].offsetWidth + 20; // Including margin
+    const slidesToShow = 5; // Number of slides to show at a time
+
+    let slideIndex = 0;
+
+    function showSlide(n) {
+        if (n < 0) {
+            slideIndex = slides.length - slidesToShow;
+        } else if (n > slides.length - slidesToShow) {
+            slideIndex = 0;
+        }
+
+        wrapper.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+    }
+
+    function prevSlide() {
+        slideIndex--;
+        showSlide(slideIndex);
+    }
+
+    function nextSlide() {
+        slideIndex++;
+        showSlide(slideIndex);
+    }
+
+    setInterval(nextSlide, 5000); // Auto play, change slide every 5 seconds
+</script>

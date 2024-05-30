@@ -1,0 +1,41 @@
+﻿@model IEnumerable<FireBasics.Models.User>
+
+@{
+    ViewData["Title"] = "User List";
+}
+
+<h2>User List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Role</td>
+                <td>
+                    <form asp-action="ChangeRole" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@user.UserId" />
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="role" id="employee@user.UserId" value="EMPLOYEE" autocomplete="off" @(user.Role == "EMPLOYEE" ? "checked" : "")>
+                            <label class="btn btn-outline-primary" for="employee@user.UserId">EMPLOYEE</label>
+
+                            <input type="radio" class="btn-check" name="role" id="farmer@user.UserId" value="FARMER" autocomplete="off" @(user.Role == "FARMER" ? "checked" : "")>
+                            <label class="btn btn-outline-primary" for="farmer@user.UserId">FARMER</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">
+                            Save
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

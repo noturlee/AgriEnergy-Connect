@@ -1,0 +1,16 @@
+﻿@model IEnumerable<FireBasics.Models.User>
+
+@{
+    ViewData["Title"] = "Farmers";
+}
+
+<h1>Farmers</h1>
+
+<ul>
+    @foreach (var farmer in Model)
+    {
+        <li>
+            <a asp-action="FarmerDetails" asp-controller="Product" asp-route-id="@farmer.UserId">@farmer.Name</a>
+        </li>
+    }
+</ul>
