@@ -1,0 +1,20 @@
+﻿@model FireBasics.Models.User
+
+@{
+    ViewData["Title"] = "Farmer Details";
+}
+
+<h1>@Model.Name's Details</h1>
+
+<h2>Personal Information</h2>
+<p>Name: @Model.Name</p>
+<p>Date of Birth: @Model.Dob</p>
+<p>Bio: @Model.Bio</p>
+
+<h2>Products</h2>
+<ul>
+    @foreach (var product in Model.Products)
+    {
+        <li>@product.ProductName</li>
+    }
+</ul>
