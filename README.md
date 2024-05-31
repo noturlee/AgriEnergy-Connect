@@ -97,6 +97,7 @@ To build and run the prototype, follow these steps:
 - **Employees:**
 - Add new farmer profiles with essential details.
 - View and filter a comprehensive list of products from any farmer based on criteria such as date range and product type.
+![gif](https://cdn.pixabay.com/animation/2023/06/29/06/23/06-23-06-393_512.gif)
 
 ## 🟢 Roadmap
 
@@ -121,11 +122,18 @@ Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks 
 
 ## 🟢 Images
 
-![gif](https://cdn.pixabay.com/animation/2023/06/29/06/23/06-23-06-393_512.gif)
+### Teaser pics of AgriEnergy-Connect
+![image](https://github.com/VCDN-2024/prog7311-part-2-Leighche/assets/104209100/a1a8c6bc-3b77-4ed1-ae35-63b3d2577bd1)
+![image](https://github.com/VCDN-2024/prog7311-part-2-Leighche/assets/104209100/f0a20c23-ae14-4f83-8425-1fd4b2ed9b3d)
+![image](https://github.com/VCDN-2024/prog7311-part-2-Leighche/assets/104209100/11d15d28-a35e-4f62-a10f-a0fc2f47ed1d)
+![image](https://github.com/VCDN-2024/prog7311-part-2-Leighche/assets/104209100/44061aae-a047-40e1-826c-53a715f8ecdc)
+![image](https://github.com/VCDN-2024/prog7311-part-2-Leighche/assets/104209100/38560584-a169-405f-955b-99b015f0dc93)
+![image](https://github.com/VCDN-2024/prog7311-part-2-Leighche/assets/104209100/7c36fc5d-b873-493e-bbe5-a6f04de9633c)
 
 ## Demo Video
 
-[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://youtu.be/anhSqbKigp8)
+### Tap the image to watch the video
+[![Demo Video](https://github.com/VCDN-2024/prog7311-part-2-Leighche/assets/104209100/23b172e4-a4f5-4bd7-90fe-d4eba3a63e24)](https://youtu.be/anhSqbKigp8)
 
 <h2 align="left" id="macropower-tech">Technology Stack</h2>
 
