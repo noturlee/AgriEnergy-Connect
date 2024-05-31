@@ -1,0 +1,114 @@
+﻿@model FireBasics.Models.AuthModel
+@{
+    Layout = "_Layout"; 
+    ViewData["Title"] = "Welcome Back Innovator";
+}
+
+<style>
+    body {
+        background-image: url('https://images.unsplash.com/photo-1487700160041-babef9c3cb55?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-position: 300px top;
+        background-repeat: no-repeat;
+        background-size: 1650px 950px;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 600px; 
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #4FA577;
+        font-size: 40px; 
+        margin-bottom: 10px; 
+    }
+
+    h4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .btn-primary {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #C4A500;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .btn-primary:hover {
+            background-color: #FFAC00;
+        }
+
+    a {
+        display: block;
+        text-align: center;
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="container">
+    <h1>Welcome Back Innovator</h1>
+    <h4>Log into your account</h4>
+    <br />
+    <br />
+    <form asp-action="SignIn">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Email" class="control-label">Email</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password" class="control-label">Password</label>
+            <input asp-for="Password" class="form-control" type="password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Log in" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

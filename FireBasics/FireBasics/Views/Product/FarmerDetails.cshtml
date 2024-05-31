@@ -1,0 +1,105 @@
+﻿@model FireBasics.Models.User
+
+@{
+    ViewData["Title"] = "Farmer Details";
+}
+<br />
+<br />
+<br />
+<h1>@Model.Name's Details</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <div>
+            <h4>Farmer Information</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    Name:
+                </dt>
+                <dd class="col-sm-10">
+                    @Model.Name
+                </dd>
+                <dt class="col-sm-2">
+                    Born:
+                </dt>
+                <dd class="col-sm-10">
+                    @Model.Dob
+                </dd>
+                <dt class="col-sm-2">
+                    Bio:
+                </dt>
+                <dd class="col-sm-10">
+                    @Model.Bio
+                </dd>
+            </dl>
+        </div>
+        <br />
+        <br />
+    </div>
+
+
+        <h4>Products Sold</h4>
+        <hr />
+    <div class="col-md-15">
+        <div class="card-container">
+            @foreach (var item in Model.Products)
+            {
+                <div class="card mb-3">
+                    <h3 class="card-header">R @Html.DisplayFor(modelItem => item.Price)</h3>
+                    <img src="@item.ImageUrl" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProductName)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Quantity: @Html.DisplayFor(modelItem => item.Quantity)</h6>
+                        <p class="card-text">
+                            Availability: <span class="availability-tag @(item.Availability == "YES" ? "availability-yes" : "availability-no")">@Html.DisplayFor(modelItem => item.Availability)</span>
+                        </p>
+                        <p class="card-text">Production Date: @Html.DisplayFor(modelItem => item.ProductionDate)</p>
+                        <p class="card-text">Category: @(item.Category?.CategoryName ?? "No Category")</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <p class="card-text">Farmer: @(item.Farmer != null ? Html.ActionLink(item.Farmer.Name, "FarmerDetails", new { id = item.FarmerId }) : "No Farmer")</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        width: 300px;
+        max-height: 700px;
+        background-color: rgba(255, 255, 255);
+        backdrop-filter: blur(2px);
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    .card-body {
+        max-height: 400px;
+        color: black;
+    }
+
+    .card-img-top {
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    h1 {
+        color: darkorange;
+        font-weight:700;
+        font-size:50px;
+    }
+
+    h4 {
+        color: yellowgreen;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+</style>

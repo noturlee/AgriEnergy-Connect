@@ -1,0 +1,49 @@
+﻿@model IEnumerable<FireBasics.Models.User>
+
+@{
+    ViewData["Title"] = "Our Suppliers";
+}
+<style>
+ h1{
+     font-size:60px;
+     font-weight:600;
+     color: darkorange;
+ }
+
+    a {
+        color: darkgreen; 
+        font-size:20px;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+</style>
+<br />
+<br />
+<br />
+<h1>Our Farmers</h1>
+<h5>Click on a farmers name to view their products</h5>
+<br />
+<br />
+<br />
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Our Quality Farmers            <br />
+                <br />
+            </th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var farmer in Model)
+        {
+            <tr>
+                <td><a asp-action="FarmerDetails" asp-controller="Product" asp-route-id="@farmer.UserId">@farmer.Name</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

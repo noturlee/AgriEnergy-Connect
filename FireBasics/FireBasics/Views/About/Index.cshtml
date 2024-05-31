@@ -1,0 +1,283 @@
+﻿@{
+    Layout = "_Layout"; 
+}
+
+<head>
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        .title {
+            font-size: 70px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+            .title span.green {
+                color: #4FA577;
+            }
+
+        .paragraph {
+            font-size: 26px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        p{
+            font-size: 26px;
+        }
+
+        .trusted-by {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: black;
+            font-weight: 700;
+        }
+
+        .providers {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+        }
+
+            .providers img {
+                width: 150px; 
+                height: auto;
+            }
+
+        .mission-title {
+            font-size: 45px;
+            color: #C4A500;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight:700;
+            text-align: left;
+        }
+
+        .Join-title {
+            font-size: 45px;
+            color: #4FA577;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .mission-paragraph {
+            font-size: 26px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .founders-section {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .founders-title {
+            font-size: 36px;
+            color: #4FA577;
+            font-weight:700;
+            margin-bottom: 40px;
+        }
+
+        .founders {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+        }
+
+        .founder {
+            text-align: center;
+        }
+
+            .founder img {
+                width: 400px; 
+                height: auto;
+            }
+
+        .founder-role {
+            font-size: 18px;
+            color: black;
+            margin-top: 10px;
+        }
+
+        .offices-title{
+            font-size: 36px;
+            color: #4FA577;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 40px;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px; 
+            width: 100%;
+        }
+
+            .contact-form h2 {
+                font-size: 32px;
+                color: #4FA577;
+                margin-bottom: 20px;
+            }
+
+            .contact-form label {
+                display: block;
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+
+            .contact-form button {
+                background-color: #4FA577;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 18px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                .contact-form button:hover {
+                    background-color: #3e8e57;
+                }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1.5s ease-in;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <br />
+    <br />
+    <br />
+    <div class="title">
+        Transforming South Africa with <span class="green">Collaboration</span>
+    </div>
+    <div class="paragraph">
+        At AgriConnect, we believe that collaboration is the key to driving positive change and innovation in South Africa's agricultural sector. Our mission is to create a platform where farmers, employees, and industry stakeholders can connect, share knowledge, and work together towards a sustainable and prosperous future. Join us on our journey to transform the landscape of agriculture through collective effort and mutual support.
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="trusted-by">
+        Trusted by local providers
+    </div>
+    <br />
+    <div class="providers">
+        <img src="https://companieslogo.com/img/orig/MTN.JO-d1d53d13.png?t=1657172637" alt="Provider 1" class="fade-in">
+        <img src="https://www.onedirectory.com/images/logo-customer-parmalat.svg" alt="Provider 2" class="fade-in">
+        <img src="https://www.onedirectory.com/images/logo-customer-newmont.svg" alt="Provider 3" class="fade-in">
+        <img src="https://www.onedirectory.com/images/logo-customer-rheinmetall.svg" alt="Provider 4" class="fade-in">
+        <img src="https://www.onedirectory.com/images/logo-customer-westfield.svg" alt="Provider 5" class="fade-in">
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="mission-title">
+        We're on a mission to help South Africa<br />
+        improve agriculture access
+    </div>
+    <div class="mission-paragraph">
+        Our goal at AgriConnect is to break down barriers in the agricultural sector, providing access to essential resources and knowledge for everyone involved. By fostering an environment of inclusivity and support, we aim to enhance productivity, sustainability, and innovation. We are dedicated to empowering local farmers, promoting sustainable practices, and ensuring that every individual has the opportunity to thrive in the agricultural community.
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="founders-section">
+        <div class="founders-title">
+            Meet Our Founders
+        </div>
+        <br />
+        <br />
+            <div class="founders">
+            <div class="founder">
+                <img src="CEO.JPG" alt="Founder 1">
+                <div class="founder-name"><br />Lee Jaikarran</div>
+                <div class="founder-role">Chief Executive Officer [CEO]</div>
+            </div>
+            <div class="founder">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbiUyMGluJTIwc3VpdHxlbnwwfHwwfHx8MA%3D%3D" alt="Founder 2">
+                <div class="founder-name"><br />John Phutu</div>
+                <div class="founder-role">Chief Technology Officer [CTO]</div>
+            </div>
+            <div class="founder">
+                <img src="https://images.unsplash.com/photo-1622497170185-5d668f816a56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1hbiUyMGluJTIwc3VpdHxlbnwwfHwwfHx8MA%3D%3D" alt="Founder 3">
+                <div class="founder-name"><br />Ray Cyst</div>
+                <div class="founder-role">Chief Operating Officer [COO]</div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="offices-title">AgriEnergy is headquartered in South Africa,<br>serving customers globally</div>
+    <p>
+        We have offices in Cape Town and Johannesburg and a satellite office in Sweet Waters, Eastern Cape. We also work remotely.
+    </p>
+    <br /><br /><br />
+    <img src ="~/banner.png" width="1300px"/>
+    <br />
+    <br />
+    <br />
+    <div class="Join-title">Join the Green Side</div>
+
+    <div class="contact-container">
+        <div class="contact-form">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+ <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('.fade-in');
+            images.forEach(img => {
+                img.classList.add('fade-in-visible');
+            });
+        });
+    </script>

@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FireBasics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/mycsstheme.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FireBasics.styles.css" asp-append-version="true" />
+    <style>
+        .sidebar {
+            height: 100vh;
+            width: 300px;
+            position: fixed;
+            top: 0;
+            ` left: 0;
+            background-image: linear-gradient(to bottom, #C4A500 48%, #4FA577 90%);
+            color: white;
+            padding-top: 20px;
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            left: 200px; 
+            height: 50px;
+            background-color: #White;
+            color: black;
+            font-size: 20px;
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000; 
+        }
+
+        .top-bar2 {
+            position: fixed;
+            top: 30px;
+            right: 130px;
+            left: 200px; 
+            height: 50px;
+            background-color: #White;
+            color: black;
+            font-size: 20px;
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000; 
+        }
+
+        .top-bar2 a {
+            color: #C4A500;
+            text-decoration: none;
+            padding: 10px;
+            padding-top: 10px;
+            margin-left: 10px;
+        }
+            .top-bar a {
+                color: #C4A500;
+                text-decoration: none;
+                padding: 10px;
+                padding-top: 10px;
+                margin-left: 10px;
+            }
+
+                .top-bar a:hover {
+                    color: #C4A500;
+                }
+
+
+        .sidebar .navbar-brand {
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+
+        .sidebar a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            font-size: 20px;
+        }
+
+            .sidebar a:hover {
+                background-color: white;
+                color: green;
+            }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand-wrapper">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="logo.png" alt="AgriEnergy-Connect" style="height: 250px;" />
+            </a>
+        </div>
+        <div class="nav-links">
+            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Home</a>
+            <br />
+            <a class="nav-link active" asp-area="" asp-controller="About" asp-action="Index"><i class="fas fa-info-circle"></i> About us</a>
+            <br />
+            @{
+                var userRole = Context.Session.GetString("Role");
+                if (userRole == null)
+                {
+                }
+                else
+                {
+                    <a class="nav-link active" asp-area="" asp-controller="Category" asp-action="Index"><i class="fas fa-th"></i> Categories</a>
+                    <br />
+                    <a class="nav-link active" asp-area="" asp-controller="Product" asp-action="Index"><i class="fas fa-box-open"></i> Market</a>
+                    <br />
+                    <a class="nav-link active" asp-area="" asp-controller="User" asp-action="Index"><i class="fas fa-users"></i> Our Suppliers</a>
+                    <br />
+                }
+                }
+                @{
+                if (userRole != null && userRole.Equals("EMPLOYEE"))
+                {
+                    <a class="nav-link active" asp-area="" asp-controller="Admin" asp-action="Index"><i class="fa-solid fa-hat-cowboy"></i> Add Farmer</a>
+                } 
+                }
+                </div>   
+    </div>
+
+        <div class="top-bar">
+    <br />
+        <a class="nav-link active" asp-area="" asp-controller="Auth" asp-action="signin">
+            <i class="far fa-circle-user fa-2x"></i>
+        </a>
+    </div>
+
+
+
+    <div class="content">
+
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
