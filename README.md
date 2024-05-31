@@ -19,6 +19,7 @@ Agri-Energy Connect is a forward-thinking initiative bridging agriculture and gr
 11. [Coding Activity](#coding-activity)
 12. [Get Started](#get-started)
 13. [Contributing](#contributing)
+14. [Contributing](#Reference-List)
 
 
 ## 🟢 Introduction
@@ -192,4 +193,28 @@ We welcome contributions from the community! If you'd like to contribute to Miss
 <img src ="https://media.tenor.com/u4RZrIbwcwEAAAAj/pokemon-miltank.gif"/>
 
 
+## 🟢 Reference List
 
+Bootswatch. [n/d]. Minty [Source code]. 
+https://bootswatch.com/minty/
+(Accessed 20 April 2024).
+
+Dindi, S. 2023. Create a Hidden Search Bar With HTML, CSS and JavaScript [Source code]. 
+https://www.makeuseof.com/search-bar-html-css-javascript/
+(Accessed 10 May 2024).
+
+geeks4geeks. 2022. How to add fade-in effect using pure JavaScript ? [Source code]. 
+https://www.geeksforgeeks.org/how-to-add-fade-in-effect-using-pure-javascript/
+(Accessed 30 May 2024).
+
+stackoverflow. 2017. Send Email Directly From JavaScript using EmailJS [Source code]. 
+https://stackoverflow.com/questions/58791656/send-email-directly-from-javascript-using-emailjs
+(Accessed 30 May 2024).
+
+W3Schools. 2024. How TO - Fixed Sidebar [Source code]. 
+https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+(Accessed 10 May 2024).
+
+W3Schools. 2024. HTML <input type="date"> [Source code]. 
+https://www.w3schools.com/TAGS/att_input_type_date.asp
+(Accessed 24 May 2021).
