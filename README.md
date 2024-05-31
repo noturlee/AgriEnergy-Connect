@@ -42,16 +42,16 @@ In response to the growing need for sustainable agricultural practices and the i
    - Populate the database with sample data to simulate real-world scenarios, ensuring the demonstration is robust and comprehensive.
 
 2. **User Role Definition and Authentication System:**
-   - Develop two distinct user roles within the system:
+   - Two user roles within the system:
      - Farmer: Can add products to their profile and view their own product listings.
      - Employee: Can add new farmer profiles, view all products from specific farmers, and use filters for product searching.
-   - Implement secure login functionality with authentication mechanisms to protect user data and ensure role-specific access.
+   - There is a secure login functionality with authentication mechanisms to protect user data and ensure role-specific access.
 
 3. **Functional Features for Farmers and Employees:**
    - For Farmers:
-     - Enable product addition feature where farmers can add new products with details like name, category, and production date.
+     - Product addition feature where farmers can add new products with details like name, category, and production date.
    - For Employees:
-     - Functionality to add new farmer profiles with essential details.
+     - Ability to add new farmer profiles with essential details.
      - Capability to view and filter a comprehensive list of products from any farmer based on criteria such as date range and product type.
 
 ## 🟢 Setup Instructions
@@ -79,7 +79,7 @@ Once you have cloned the repository and ensured all dependencies are installed, 
 1. Navigate to the root directory of the project.
 2. Run the following command to restore any missing dependencies:
 3. Configure the database connection string in the `appsettings.json` file.
-4. Run the following command to apply any database migrations://///////////////////////////////////////////////////
+4. Run the database migrations
 5. Once the database is set up, you can now build and run the application.
 
 ## Building and Running the Prototype
@@ -106,11 +106,11 @@ Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks 
 - [x] Database schema design and integration.
 - [x] User authentication system with role-based access control.
 - [x] Basic CRUD functionality for farmers and employees.
+- [x] Implementation of Green Energy Marketplace.
+- [x] Implementation of search and filtering functionality for products.
 
 ### In Progress
-- [ ] Implementation of Green Energy Marketplace.
 - [ ] Integration of payment gateway for product transactions.
-- [ ] Implementation of search and filtering functionality for products.
 
 ### Planned
 - [ ] Enhancement of user interface for improved user experience.
@@ -125,7 +125,7 @@ Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks 
 
 ## Demo Video
 
-[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
+[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://youtu.be/anhSqbKigp8)
 
 <h2 align="left" id="macropower-tech">Technology Stack</h2>
 
@@ -168,33 +168,6 @@ Here's our roadmap for Agri-Energy Connect, with an overview of completed tasks 
 
 <img src ="https://cdn.pixabay.com/animation/2023/08/21/15/08/15-08-12-734_512.gif" />
 
-<h2 align="left">🟢 Coding Activity</h2>
-
-> Total logged open-source coding time since 2024 March. Updated every 1 hour.
-
-<!-- prettier-ignore-start -->
-<!-- START_SECTION:ascii_graph -->
-
-```
-  2024.0 hr  ┤                                                                                                  ╭ 
-  2024.1 hr  ┤                                                                                     ╭────────────╯ 
-  2024.2 hr  ┤                                                                                     │              
-  2024.3 hr  ┤                                                                                    ╭╯              
-  2024.4 hr  ┤                                                                                    │               
-  2024.4 hr  ┤                                                                                   ╭╯               
-  2024.5 hr  ┤                                                                                   │                
-  2024.6 hr  ┤                                                                                  ╭╯                
-  2024.7 hr  ┤                                                                                  │                 
-  2024.8 hr  ┤                                                                                 ╭╯                 
-  2024.9 hr  ┤                                                                                ╭╯                  
-  2024.0 hr  ┤                                                                               ╭╯                   
-  2024.1 hr  ┼───────────────────────────────────────────────────────────────────────────────╯                    
-             ┼─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┤ 
-            -7d           -6d           -5d           -4d           -3d           -2d           -1d           now
-```
-
-<!-- END_SECTION:ascii_graph -->
-<!-- prettier-ignore-end -->
 
 ## Get Started
 
