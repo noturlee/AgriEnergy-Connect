@@ -1,4 +1,4 @@
-<img src ="Images/Banner.gif" />
+![Beige Modern Elegant Personal LinkedIn Banner](https://github.com/noturlee/AgriEnergy-Connect/assets/100778149/8ffa27ac-3ef1-498d-aa84-f7d66ce95576)
 
 # Agri-Energy Connect
 
